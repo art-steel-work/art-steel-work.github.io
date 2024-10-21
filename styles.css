@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #444;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Services Section */
+#servicii {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#servicii h2 {
+    margin-bottom: 40px;
+}
+
+.service-item {
+    display: inline-block;
+    margin: 15px;
+    width: 30%;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+}
+
+/* Reviews Section */
+#recenzii {
+    padding: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.review-carousel {
+    overflow: hidden; /* Hide overflow for sliding */
+    width: 100%;
+    position: relative;
+}
+
+.reviews-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding */
+    width: 100%; /* Adjust width */
+}
+
+.review-item {
+    min-width: 100%; /* Each review takes up full width */
+    margin-right: 0;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width */
+    word-wrap: break-word;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .review-item {
+        min-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .review-item {
+        min-width: 100%; /* Full width for each review */
+    }
+}
+
+
+/* FAQ Section */
+#faq {
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background color for the section */
+    text-align: left;
+}
+
+#faq h2 {
+    font-size: 2.5em;
+    color: #333; /* Darker color for better contrast */
+    margin-bottom: 30px;
+    text-align: center; /* Center the section title */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border around each FAQ item */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for FAQ items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.faq-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Lift the item slightly on hover */
+}
+
+.faq-item h3 {
+    color: #444; /* Darker color for the question */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #666; /* Lighter color for the answer */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px; /* Adding slight rounding for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 40px auto;
+    max-width: 600px; /* Ensuring it doesn't stretch too much */
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007bff; /* A vibrant blue for the links */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-weight: 500; /* Slightly bolder text for important information */
+}
+
+/* Style for social media links */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.2em;
+    margin: 0 10px;
+    color: #007bff; /* Matching social media links to the same color scheme */
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Darker blue for hover effect */
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    .service-item {
+        width: 45%; /* Adjust the service item width for tablets */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    /* Stack navigation items vertically on small screens */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .service-item {
+        width: 100%; /* Full width for each service item */
+    }
+
+
+    #contact ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Large Screens (above 1024px) */
+@media (min-width: 1024px) {
+    .service-item {
+        width: 30%; /* Return to original width for larger screens */
+    }
+}
